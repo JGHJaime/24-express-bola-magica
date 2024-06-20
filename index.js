@@ -31,7 +31,7 @@ const frases = [
 var frasesServidas = [0]
 
 bolaMagica.get("/magico", (req, res) => {
-    frase = frases[Math.floor(Math.random() * frases.lenght)]
+    frase = frases[Math.floor(Math.random() * frases.length)]
     console.log(`${frasesServidas++} -- ${frase}`)
     res.send(frase)
 })
